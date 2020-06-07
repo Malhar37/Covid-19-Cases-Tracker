@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+        <title>Covid-19 Update</title>
+        <!-- Bootstrap css -->
+        <link rel="stylesheet" href="/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="/css/mdb.min.css" />
+
+        <!-- Font awesome -->
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/2cf2b26a8c.js" crossorigin="anonymous"></script>
+        
+        <!--personalised css-->
+        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="icon" href="/css/favicon.ico">
+        
+    </head>
+
+<body>
+    <div id="loader" class="center"></div> 
+
+    
+    
+    <div class="heading">
+        <h1>COVID-19 <span style="color: #0779e4;">INDIA</span></h1>
+    </div>
+    <section id="intro"></section>
+    <div class="flex-container row">
+        <div class="blocks col-lg col-md col-sm">
+        <div style="font-size: 1rem; color: red;">Confirmed</div>
+        <div id="data1" style="font-size: 2rem; color: red;">0000</div>
+        </div>
+        <div class="blocks col-lg col-md col-sm">
+        <div style="font-size: 1rem; color: #0779e4;">Active</div>
+        <div id="data2" style="font-size: 2rem; color: #0779e4;">0000</div>
+        </div>
+        <div class="blocks col-lg col-md col-sm">
+        <div style="font-size: 1rem; color: green;">Recovered</div>
+        <div id="data3" style="font-size: 2rem; color: green;">0000</div>
+        </div>
+        <div class="blocks col-lg col-md col-sm">
+        <div style="font-size: 1rem; color: orange;">Death</div>
+        <div id="data4" style="font-size: 2rem; color: orange;">0000</div>
+        </div>
+
+    </div>
+</section>
+<p class="heading2">Click on any state to view <span style="color: #0779e4;">district</span> data</p>
+<section id="tab1">
+    <table class="table table-hover table-borderless table-responsive-md table-responsive-sm "id="tab2">
+        <thead class="">
+            <tr class="">
+                <th style="font-weight:700;">States</th>
+                <th style=" font-weight:700; font-size: 1rem; color: red;">Confirmed</th>
+                <th style="font-weight:700;font-size: 1rem; color: #0779e4;">Active</th>
+                <th style="font-weight:700;font-size: 1rem; color: green;">Recovered</th>
+                <th style="font-size: 1rem;font-weight:700; color: orange;">Death</th>
+            </tr>
+        </thead>
+        <tbody id="tabledata"></tbody>
+    </table>
+</section>
+
+<section id="lastupdate">
+    <p id="time"></p>
+</section>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+<script type="text/javascript" src="/js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="/js/mdb.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function()
+    {
+        $(document).on("click", ".breakrow", function()
+        {
+            $(this).nextUntil('tr.breakrow').slideToggle(200);
+        });
+    });
+    </script>
+<script> 
+    document.onreadystatechange = function() { 
+        if (document.readyState !== "complete") { 
+            document.querySelector( 
+              "body").style.visibility = "hidden"; 
+            document.querySelector( 
+              "#loader").style.visibility = "visible"; 
+        } else { 
+            document.querySelector( 
+              "#loader").style.display = "none"; 
+            document.querySelector( 
+              "body").style.visibility = "visible"; 
+        } 
+    }; 
+</script> 
+<script type="text/javascript">
+    $(document).ready(function(){    
+        //Check if the current URL contains '#'
+        if(document.URL.indexOf("#")==-1){
+            // Set the URL to whatever it was plus "#".
+            url = document.URL+"#";
+            location = "#";
+    
+            //Reload the page
+            location.reload(true);
+        }
+    });
+    </script>
+</body>
+
+<div class="footer-padding">
+    <footer>
+        <div class="icons">
+                <a href="https://www.facebook.com/Malhar.037" target="blank"><i class=" fa fab fa-facebook-f " ></i></a>
+               <a href="https://www.instagram.com/_mr._lucifer._/?hl=en" target="blank"><i class="fa fab fa-instagram "></i></a> 
+               <a href="https://twitter.com/Malhar37" target="blank"><i class="fa fab fa-twitter "></i></a>
+               <a href="https://github.com/Malhar37" target="blank"><i class="fa fas fa-github "></i></a>
+               <a href="https://www.linkedin.com/in/malhar37/" target="blank"><i class="fa fas fa-linkedin "></i></a>
+            </div>
+               
+        <p class="footer-text">Made with 🧡 by Malhar Lohar</p>
+        <p class="dis">This Website is a part of educational project and the above displayed data is fetched from various <a href="https://api.covid19india.org/" target="blank">APIs</a></p>
+    </footer>
+    </div>
+    </html>

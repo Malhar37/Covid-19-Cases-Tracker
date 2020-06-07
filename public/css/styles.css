@@ -1,0 +1,182 @@
+
+
+body
+{
+    text-align: center;
+    background-color: #f4f4f4;
+    font-family: 'Alegreya Sans', sans-serif;  
+    font-weight: 500;
+    
+}
+#loader { 
+    border: 12px solid #f3f3f3; 
+    border-radius: 50%; 
+    border-top: 12px solid #0779e4; 
+    width: 70px; 
+    height: 70px; 
+    animation: spin 1s linear infinite; 
+} 
+  
+@keyframes spin { 
+    100% { 
+        transform: rotate(360deg); 
+    } 
+} 
+  
+.center { 
+    position: absolute; 
+    top: 0; 
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+    margin: auto; 
+} 
+#intro
+{
+    margin-top: 5%;
+    text-align: center;
+}
+.blocks 
+{
+    
+    padding: 2% 2%;
+    background-color: white;
+    /* background-color: white; */
+    border-radius: 15px;
+    margin: 10px 30px;
+    -webkit-box-shadow: 0px 0px 20px -0px rgba(0, 0, 0, 0.2);
+    
+}
+
+h1
+{
+    margin-top: 2%;
+    color: grey;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.heading2
+{
+    font-size: 1.5rem;
+    margin-top: 5%;
+    color: grey;
+    font-weight: 500;
+}
+.flex-container
+{
+    padding: 2% 0%;
+    margin: 0% 20%;   
+}
+footer
+{
+    position: absolute;
+    text-align: center;
+    margin-top: auto;
+    width: 100%;
+}
+
+#lastupdate
+{
+    text-align: center;
+}
+.fa
+{
+    padding: 15px;
+    font-size: 20px;;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 8px;
+    border-radius: 100%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook-f {
+  background: #3B5998;
+  padding:15px 18px;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  .fa-instagram {
+    background: #DD2A7B;
+    color: white;
+  }
+  .fa-github {
+    background: #211F1F;
+    color: white;
+  }
+
+.icons
+{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.footer-text
+{
+    position: relative;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+.dis
+{
+    text-align: center;
+}
+#tab1
+{
+    position: relative;
+    padding: 2% 0%;
+    margin: 0% 20%;
+}
+#tab2
+{
+    border-radius: 1rem;
+    margin-top: 0;
+    -webkit-box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
+    background-color: white;
+}
+
+#grad {
+    background-color: #e3eef1;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    color: black;
+    font-family: GrotekMed;
+    -webkit-box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
+  }
+@media (max-width: 900px)
+{
+    .heading2
+    {
+        font-size: 1rem;
+    }
+    
+    #tab1
+{
+    padding: 2%;
+    margin: 0;
+}   
+ 
+ .icons
+ {
+     margin-left: 3px;
+ }
+h1
+{
+    margin-top: 5%;
+}
+}
+
+.canvas
+{
+    background-color: lightslategray;
+}
